@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecloud Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <h2 class="logo"><i class="fa solid fa-cloud"></i> minecloud</h2>
+        <nav>
+          <ul>
+            <li class="active"><i class="fa-solid fa-folder"></i> All Files</li>
+            <li><i class="fa-solid fa-history"></i> Recent</li>
+            <li><i class="fa-solid fa-heart"></i> Favorites</li>
+            <li><i class="fa-solid fa-share"></i> Shared</li>
+            <li><i class="fa-solid fa-tag"></i> Tags</li>
+          </ul>
+        </nav>
+        <div class="storage">
+          <p>Storage: 42 GB / 256 GB</p>
+          <div class="progress-bar">
+            <div
+              class="progress-fill"
+              style="width: calc(42 / 256 * 100%)"
+            ></div>
+          </div>
+        </div>
+      </aside>
+      <!-- main section -->
+      <main class="main-content">
+        <!-- top navbar -->
+        <header class="top-bar">
+          <nav>
+            <button class="active">
+              <i class="fa-solid fa-folder"></i> Files
+            </button>
+            <button><i class="fa-solid fa-analytics"></i> Activity</button>
+            <button><i class="fa-solid fa-calendar"></i> Calendar</button>
+            <button><i class="fa-solid fa-address-book"></i> Contact</button>
+          </nav>
+          <input
+            type="search"
+            name="seach"
+            id="search"
+            placeholder="Search anything..."
+          />
+          <div class="user-profile">
+            <img src="assets/3135715.png" alt="user profile" />
+          </div>
+        </header>
+        <!-- quick access -->
+        <section class="quick-access">
+          <h3>Quick Access</h3>
+          <div class="cards">
+            <div class="card">
+              <i class="fa fa-solid fa-folder"></i>
+              <p>Studio Work</p>
+              <small>2.3 GB • 23 Items</small>
+            </div>
+            <div class="card">
+              <i class="fa fa-solid fa-folder"></i>
+              <p>Source</p>
+              <small>1 GB • 12 Items</small>
+            </div>
+            <div class="card">
+              <i class="fa fa-solid fa-folder"></i>
+              <p>Brand Assets</p>
+              <small>4 GB • 10 Items</small>
+            </div>
+            <div class="card">
+              <i class="fa fa-solid fa-folder"></i>
+              <p>Pitch Deck</p>
+              <small>3 GB • 8 Items</small>
+            </div>
+          </div>
+        </section>
+        <!-- breadcrumb and action -->
+        <div class="breadcrumb">
+          <span>Home > Concept Font > Maszeh</span>
+          <button class="new-btn">+ Add New</button>
+        </div>
+        <!-- file table -->
+        <table class="file-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Sharing</th>
+              <th>Size</th>
+              <th>Modified</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Docs</td>
+              <td>Public</td>
+              <td>4.5 MB</td>
+              <td>Apr 10, 2025</td>
+            </tr>
+            <tr>
+              <td>Docs</td>
+              <td>Public</td>
+              <td>4.5 MB</td>
+              <td>Apr 10, 2025</td>
+            </tr>
+            <tr>
+              <td>Docs</td>
+              <td>Public</td>
+              <td>4.5 MB</td>
+              <td>Apr 10, 2025</td>
+            </tr>
+            <tr>
+              <td>Docs</td>
+              <td>Public</td>
+              <td>4.5 MB</td>
+              <td>Apr 10, 2025</td>
+            </tr>
+            <tr>
+              <td>Docs</td>
+              <td>Public</td>
+              <td>4.5 MB</td>
+              <td>Apr 10, 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+      <!-- info panel -->
+      <aside class="info-panel">
+        <h4>Source</h4>
+        <p>1.2 MB • Yesterday • 1 item</p>
+        <div class="tags">
+          <span>#work</span>
+          <span>#source</span>
+          <span>#font</span>
+        </div>
+        <div class="sharing">+6 people</div>
+        <div class="activity-log">
+          <h5>Activity</h5>
+          <ul class="timeline">
+            <li class="activity-item">
+              <div class="timeline-dot"></div>
+              <div class="activity-content">
+                <p class="timestamp">
+                  <time datetime="2025-07-07">July 7</time>
+                </p>
+                <div class="user-activity-container">
+                  <img
+                    src="assets/3135715.png"
+                    alt="User"
+                    class="activity-user"
+                  />
+                  <div class="activity-text">
+                    <strong>You</strong> shared edit access to files<br />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="timeline-dot"></div>
+              <div class="activity-content">
+                <p class="timestamp">
+                  <time datetime="2025-07-07">July 7</time>
+                </p>
+                <div class="user-activity-container">
+                  <img
+                    src="assets/3135715.png"
+                    alt="User"
+                    class="activity-user"
+                  />
+                  <div class="activity-text">
+                    <strong>You</strong> shared edit access to files<br />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="timeline-dot"></div>
+              <div class="activity-content">
+                <p class="timestamp">
+                  <time datetime="2025-07-07">July 7</time>
+                </p>
+                <div class="user-activity-container">
+                  <img
+                    src="assets/3135715.png"
+                    alt="User"
+                    class="activity-user"
+                  />
+                  <div class="activity-text">
+                    <strong>You</strong> shared edit access to files<br />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="timeline-dot"></div>
+              <div class="activity-content">
+                <p class="timestamp">
+                  <time datetime="2025-07-07">July 7</time>
+                </p>
+                <div class="user-activity-container">
+                  <img
+                    src="assets/3135715.png"
+                    alt="User"
+                    class="activity-user"
+                  />
+                  <div class="activity-text">
+                    <strong>You</strong> shared edit access to files<br />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="timeline-dot"></div>
+              <div class="activity-content">
+                <p class="timestamp">
+                  <time datetime="2025-07-07">July 7</time>
+                </p>
+                <div class="user-activity-container">
+                  <img
+                    src="assets/3135715.png"
+                    alt="User"
+                    class="activity-user"
+                  />
+                  <div class="activity-text">
+                    <strong>You</strong> shared edit access to files<br />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="timeline-dot"></div>
+              <div class="activity-content">
+                <p class="timestamp">
+                  <time datetime="2025-07-07">July 7</time>
+                </p>
+                <div class="user-activity-container">
+                  <img
+                    src="assets/3135715.png"
+                    alt="User"
+                    class="activity-user"
+                  />
+                  <div class="activity-text">
+                    <strong>You</strong> shared edit access to files<br />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="timeline-dot"></div>
+              <div class="activity-content">
+                <p class="timestamp">
+                  <time datetime="2025-07-07">July 7</time>
+                </p>
+                <div class="user-activity-container">
+                  <img
+                    src="assets/3135715.png"
+                    alt="User"
+                    class="activity-user"
+                  />
+                  <div class="activity-text">
+                    <strong>You</strong> shared edit access to files<br />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="timeline-dot"></div>
+              <div class="activity-content">
+                <p class="timestamp">
+                  <time datetime="2025-07-07">July 7</time>
+                </p>
+                <div class="user-activity-container">
+                  <img
+                    src="assets/3135715.png"
+                    alt="User"
+                    class="activity-user"
+                  />
+                  <div class="activity-text">
+                    <strong>You</strong> shared edit access to files<br />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="timeline-dot"></div>
+              <div class="activity-content">
+                <p class="timestamp">
+                  <time datetime="2025-07-07">July 7</time>
+                </p>
+                <div class="user-activity-container">
+                  <img
+                    src="assets/3135715.png"
+                    alt="User"
+                    class="activity-user"
+                  />
+                  <div class="activity-text">
+                    <strong>You</strong> shared edit access to files<br />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="timeline-dot"></div>
+              <div class="activity-content">
+                <p class="timestamp">
+                  <time datetime="2025-07-07">July 7</time>
+                </p>
+                <div class="user-activity-container">
+                  <img
+                    src="assets/3135715.png"
+                    alt="User"
+                    class="activity-user"
+                  />
+                  <div class="activity-text">
+                    <strong>You</strong> shared edit access to files<br />
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
